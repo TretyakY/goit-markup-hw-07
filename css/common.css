@@ -235,9 +235,6 @@ transition: background-color var(--trns-fast), color var(--trns-fast), box-shado
   text-align: center;
 }
 
-
-
-
 .text {
   color: var(--primary-txt-cl);
 }
@@ -951,8 +948,6 @@ background-color: var(--accent-bg-cl);
   
 }
 }
-
-
 
 .subscribe-form-btn:hover,
 .subscribe-form-btn:focus {
