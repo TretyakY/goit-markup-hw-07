@@ -828,6 +828,8 @@ background-color: var(--accent-bg-cl);
   text-align: left;
    }}
 
+     
+
 .socials-link-footer {
   display: flex;
   align-items: center;
@@ -1271,13 +1273,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 /* Mobile-menu */
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
+  min-height: 24px;
+  min-width: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  margin: 0;
+  margin-bottom: 32px;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -1296,6 +1297,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
+.menu-toggle-svg {
+  fill: #000000;
+}
 
 .menu-container {
   position: fixed;
@@ -1303,10 +1307,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #3f51b5;
+  background-color: var(--wht-cl);
   z-index: 999;
   padding-top: 80px;
-
+  padding-bottom: 40px;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -1318,13 +1323,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
-  right: 16px;
-  color: #fff;
-}
+  right: 16px; 
+  background: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
 .mobile-menu {
-  padding-bottom: 284px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 284px;
   list-style: none;
   display: block;
   font-weight: 700;
@@ -1333,20 +1339,35 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.02em;
   color: var(--secondary-txt-cl);
   transition: color var(--trns-fast);
+
 } 
+
+.address-link-toggle, .mobile-menu :not(:last-child) {
+  padding-bottom: 40px;
+
+}
+
 
 .mobile-menu .link {
   display: block;
-  padding-bottom: 40px;
-  color:var(--secondary-txt-cl);
+  color: #2E2F42;
   text-decoration: none;
+
 }
+.link.link-contacts-toggle {
+  color: var(--deep-bg-cl);
+}
+
 
 .address-list-toggle {
  padding-bottom: 48px;
-  margin-left: 40px;
+ margin-left: 40px;
   list-style: none;
   display: block;
+
+  font-size: 36px;
+  line-height: calc(40/36);
+  letter-spacing: 0.02em;
   
   transition: color var(--trns-fast);
 }
@@ -1356,14 +1377,26 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-size: 20px;
   line-height: calc(24/20);
   letter-spacing: 0.02em;
-  color: var(--accent-txt-cl)
+  color: #434455;
 } 
-
 
 .address-link-toggle {   
     display: block;
     font-style: normal;
     padding-top: 24px;
     padding-bottom: 24px;
-    color: var(--primary-txt-cl);
+    color: #4D5AE5;
     transition: color var(--trns-fast); }
+
+
+  .socials-toggle {
+      padding-left: 40px; 
+       margin-right: 60px;
+       margin-bottom: 0px;
+       gap: 56px;
+    }
+
+    .socials-toggle .socials-link-footer {
+      background-color: #4D5AE5;
+      margin-bottom: 0px;
+            }
