@@ -1369,9 +1369,6 @@ transform: scale(0.7);
   color: var(--accent-txt-cl);
 }
 
-[data-modal] {
-  min-width: 320px;
-}
 
 .modal-form-btn {
 display: block;
@@ -1418,6 +1415,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     display: none;
   }
 }
+
 
 .menu-toggle:hover,
 .menu-toggle:focus {
