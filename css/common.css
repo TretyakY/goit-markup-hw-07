@@ -107,9 +107,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1370,6 +1367,10 @@ transform: scale(0.7);
 
 .modal-form-link {
   color: var(--accent-txt-cl);
+}
+
+[data-modal] {
+  min-width: 320px;
 }
 
 .modal-form-btn {
