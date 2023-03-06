@@ -88,7 +88,6 @@ html {
 
 body {
   margin:0;
-  padding-top: 72px;
   font-family: var(--primary-font);
   font-style: normal;
   font-size: 16px;
@@ -97,6 +96,12 @@ body {
   background-color: var(--primary-bg-cl);
   color: var(--primary-txt-cl);
 }
+
+@media screen and (min-width: 768px) {
+ body {padding-top: 72px;
+}}
+
+
 .container-for-bg 
 {width: 1440px;}
 
@@ -219,7 +224,6 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 /* header styles */
 
 .header {
-  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
@@ -232,6 +236,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 @media screen and (min-width: 1200px){
 .header {
  min-height: 72px;
+position: fixed;
  }}
 
 .header-container {
