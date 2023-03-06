@@ -572,7 +572,7 @@ url(../images/hero/Dark-bgbg-img_mob@2x.jpg);
 }
 
 .text-about {
-  width: 396px;    
+  max-width: 396px;    
   margin-bottom: 72px;
 }
 
@@ -737,7 +737,7 @@ url(../images/hero/Dark-bgbg-img_mob@2x.jpg);
 /* customers section */
 .icon-logos-cl {
     content:'';
-    width: 190px;
+    /* width: 190px; */
     height: 88px;
     border: 1px solid #8E8F99;
     border-radius: var(--border-radius);
