@@ -1509,6 +1509,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   height: 100%;
   background-color: var(--wht-cl);
   z-index: 999;
+  overflow-y: scroll;
+  height: 796px;
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
