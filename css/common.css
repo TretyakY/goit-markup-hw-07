@@ -1513,6 +1513,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding-top: 80px;
   padding-bottom: 40px;
   padding-left: 40px;
+  padding-right: 35px;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -1566,10 +1567,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   list-style: none;
   display: block;
   font-weight:700;
-  font-size: 36px;
-  
+  font-size: 2em;
   line-height: calc(40/36);
-  letter-spacing: 0.02em;
+  letter-spacing: 0.5vw;
+  min-width: 354px;
   transition: color var(--trns-fast);
 }
 
@@ -1580,10 +1581,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.02em;
   color: #434455;
 } 
-.addition-toggle {
-  max-width: 352px;
-}
-.address-link-toggle {   
+/* .addition-toggle {
+  
+} */
+
+.address-link-toggle { 
+  min-width: 394px;
     display: block;
     font-style: normal;
     padding-top: 24px;
